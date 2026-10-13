@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduFun - Belajar Jadi Lebih Seru</title>
+  <meta name="description" content="EduFun, tempat belajar yang seru dan menyenangkan untuk anak SD.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎒</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <noscript><style>.reveal{opacity:1!important}</style></noscript>
+</head>
+<body>
+
+  <!-- Dekorasi latar belakang -->
+  <div class="bg-shapes" aria-hidden="true">
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#beranda" class="logo" aria-label="EduFun - Beranda">
+        <svg class="logo-icon" viewBox="0 0 48 48" width="44" height="44" aria-hidden="true">
+          <defs>
+            <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#7C7CF0"/>
+              <stop offset="1" stop-color="#5B5BD6"/>
+            </linearGradient>
+          </defs>
+          <rect width="48" height="48" rx="14" fill="url(#logoGrad)"/>
+          <path d="M9 20c5-2 10-1 15 2v15c-5-3-10-4-15-2z" fill="#fff"/>
+          <path d="M39 20c-5-2-10-1-15 2v15c5-3 10-4 15-2z" fill="#FFE08A"/>
+          <path d="M24 5l2.2 4.4 4.8.7-3.5 3.4.8 4.8-4.3-2.3-4.3 2.3.8-4.8-3.5-3.4 4.8-.7z" fill="#FF9F43"/>
+        </svg>
+        <span class="logo-text">Edu<span>Fun</span></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Menu utama">
+        <ul>
+          <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+          <li><a href="#mapel" class="nav-link">Mata Pelajaran</a></li>
+          <li><a href="#tentang" class="nav-link">Tentang</a></li>
+        </ul>
+        <a href="#mapel" class="btn btn-small">Mulai Belajar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HALAMAN BERANDA ===== -->
+    <div id="home">
+
+      <!-- HERO -->
+      <section class="hero" id="beranda">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <span class="badge anim-up" style="--d:.1s">🎉 Tempat belajar anak SD</span>
+            <h1 class="anim-up" style="--d:.25s">
+              Belajar Jadi <span class="hl">Lebih Seru</span> Bersama EduFun!
+            </h1>
+            <p class="hero-desc anim-up" style="--d:.4s">
+              Yuk, jelajahi berbagai pelajaran dengan cara yang menyenangkan.
+              Belajar tidak lagi membosankan, malah bikin ketagihan!
+            </p>
+            <div class="hero-actions anim-up" style="--d:.55s">
+              <a href="#mapel" class="btn btn-main" id="startBtn">
+                Mulai Belajar <span class="arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual anim-pop" style="--d:.3s">
+            <!-- Ilustrasi anak belajar (SVG) -->
+            <svg class="hero-svg" viewBox="0 0 400 420" role="img" aria-label="Ilustrasi anak laki-laki ceria sedang membaca buku">
+              <circle cx="200" cy="215" r="175" fill="#FFE8A3"/>
+              <circle cx="200" cy="215" r="135" fill="#FFF3C9"/>
+
+              <g transform="translate(70 100)"><path class="twinkle" d="M0-10L3-3H10L4.5 2 6.5 9 0 5-6.5 9-4.5 2-10-3-3-3Z" fill="#FFD93D"/></g>
+              <g transform="translate(335 140)"><path class="twinkle t2" d="M0-10L3-3H10L4.5 2 6.5 9 0 5-6.5 9-4.5 2-10-3-3-3Z" fill="#FF6B9D"/></g>
+              <g transform="translate(320 330)"><path class="twinkle t3" d="M0-10L3-3H10L4.5 2 6.5 9 0 5-6.5 9-4.5 2-10-3-3-3Z" fill="#4DABF7"/></g>
+
+              <g class="char">
+                <path d="M105 400V330Q105 268 200 268Q295 268 295 330V400Z" fill="#5B5BD6"/>
+                <rect x="185" y="238" width="30" height="36" rx="10" fill="#F2B98F"/>
+                <path d="M180 270L200 292L220 270Z" fill="#fff"/>
+                <circle cx="140" cy="205" r="11" fill="#F7C6A1"/>
+                <circle cx="260" cy="205" r="11" fill="#F7C6A1"/>
+                <circle cx="200" cy="200" r="62" fill="#FFD3B0"/>
+                <path d="M138 198C130 100 270 100 262 198C250 168 230 160 200 160C170 160 150 168 138 198Z" fill="#3B2A20"/>
+                <path d="M166 190Q177 183 188 190M212 190Q223 183 234 190" fill="none" stroke="#3B2A20" stroke-width="3.5" stroke-linecap="round"/>
+                <g class="eyes">
+                  <ellipse cx="177" cy="207" rx="6" ry="7.5" fill="#2B2D42"/>
+                  <ellipse cx="223" cy="207" rx="6" ry="7.5" fill="#2B2D42"/>
+                  <circle cx="179" cy="204" r="2.2" fill="#fff"/>
+                  <circle cx="225" cy="204" r="2.2" fill="#fff"/>
+                </g>
+                <circle cx="162" cy="226" r="9" fill="#FF8FA3" opacity=".55"/>
+                <circle cx="238" cy="226" r="9" fill="#FF8FA3" opacity=".55"/>
+                <path d="M186 228Q200 248 214 228Z" fill="#E5586E" stroke="#2B2D42" stroke-width="3" stroke-linejoin="round"/>
+
+                <path d="M120 320Q100 365 150 372" fill="none" stroke="#5B5BD6" stroke-width="30" stroke-linecap="round"/>
+                <path d="M280 320Q300 365 250 372" fill="none" stroke="#5B5BD6" stroke-width="30" stroke-linecap="round"/>
+
+                <path d="M110 338L200 352V406L110 392Z" fill="#fff" stroke="#2B2D42" stroke-width="3" stroke-linejoin="round"/>
+                <path d="M290 338L200 352V406L290 392Z" fill="#FFF8E1" stroke="#2B2D42" stroke-width="3" stroke-linejoin="round"/>
+                <path d="M126 358L186 368M126 372L186 382" stroke="#B8BCE8" stroke-width="4" stroke-linecap="round"/>
+                <path d="M274 358L214 368M274 372L214 382" stroke="#F5C98A" stroke-width="4" stroke-linecap="round"/>
+
+                <circle cx="150" cy="372" r="13" fill="#FFD3B0"/>
+                <circle cx="250" cy="372" r="13" fill="#FFD3B0"/>
+              </g>
+            </svg>
+
+            <span class="float-badge fb1" aria-hidden="true">➕</span>
+            <span class="float-badge fb2" aria-hidden="true">Aa</span>
+            <span class="float-badge fb3" aria-hidden="true">🔬</span>
+            <span class="float-badge fb4" aria-hidden="true">🌏</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gelombang pemisah -->
+      <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 40C240 100 480 0 720 40C960 80 1200 10 1440 50V90H0Z" fill="#ffffff"/>
+      </svg>
+
+      <!-- MATA PELAJARAN -->
+      <section class="subjects" id="mapel">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="badge badge-alt">📚 Pilih Pelajaran</span>
+            <h2>Mau Belajar Apa Hari Ini?</h2>
+            <p>Pilih mata pelajaran favoritmu dan mulai petualangan belajarmu!</p>
+          </div>
+
+          <div class="subject-grid">
+            <a class="subject-card reveal c-math" href="#/mapel/matematika" style="--d:.0s">
+              <div class="icon-wrap"><span class="icon" aria-hidden="true">🔢</span></div>
+              <h3>Matematika</h3>
+              <p>Berhitung jadi asyik dengan angka dan permainan.</p>
+              <span class="card-link">Jelajahi <span aria-hidden="true">→</span></span>
+            </a>
+
+            <a class="subject-card reveal c-indo" href="#/mapel/bahasa-indonesia" style="--d:.08s">
+              <div class="icon-wrap"><span class="icon" aria-hidden="true">📖</span></div>
+              <h3>Bahasa Indonesia</h3>
+              <p>Membaca, menulis, dan bercerita dengan percaya diri.</p>
+              <span class="card-link">Jelajahi <span aria-hidden="true">→</span></span>
+            </a>
+
+            <a class="subject-card reveal c-ipa" href="#/mapel/ipa" style="--d:.16s">
+              <div class="icon-wrap"><span class="icon" aria-hidden="true">🔬</span></div>
+              <h3>IPA</h3>
+              <p>Temukan rahasia alam, tumbuhan, hewan, dan sekitarmu.</p>
+              <span class="card-link">Jelajahi <span aria-hidden="true">→</span></span>
+            </a>
+
+            <a class="subject-card reveal c-ips" href="#/mapel/ips" style="--d:.24s">
+              <div class="icon-wrap"><span class="icon" aria-hidden="true">🌏</span></div>
+              <h3>IPS</h3>
+              <p>Kenali lingkungan, budaya, dan dunia tempat kita tinggal.</p>
+              <span class="card-link">Jelajahi <span aria-hidden="true">→</span></span>
+            </a>
+
+            <a class="subject-card reveal c-eng" href="#/mapel/bahasa-inggris" style="--d:.32s">
+              <div class="icon-wrap"><span class="icon" aria-hidden="true">🗣️</span></div>
+              <h3>Bahasa Inggris</h3>
+              <p>Hello! Yuk, kenalan dengan kata-kata baru dalam English.</p>
+              <span class="card-link">Jelajahi <span aria-hidden="true">→</span></span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== HALAMAN MATA PELAJARAN / MATERI / KUIS (diisi oleh script.js) ===== -->
+    <div id="app" hidden></div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="tentang">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo-text logo-light">Edu<span>Fun</span></div>
+        <p>Tempat belajar yang seru, ceria, dan mudah untuk anak SD.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#mapel">Mata Pelajaran</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year">2026</span> EduFun. Dibuat dengan <span aria-label="cinta">💜</span> untuk anak Indonesia.</p>
+    </div>
+  </footer>
+
+  <!-- PENTING: data.js harus dimuat SEBELUM script.js -->
+  <script src="data.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
